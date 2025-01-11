@@ -1,5 +1,5 @@
 // List of valid names
-const validNames = ["Alice", "Bob", "Charlie"];
+const validNames = ["Citra", "Sandy", "Atta"];
 
 // Handle Form Submission
 document.getElementById("login-form").addEventListener("submit", function (e) {

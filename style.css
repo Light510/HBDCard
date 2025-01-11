@@ -2,12 +2,18 @@
 body {
     background-color: pink;
     color: white;
-    font-family: Arial, sans-serif;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "Pacifico", serif;
   }
+  .pacifico-regular {
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
   
   /* Form Card */
   .form-card {
@@ -15,7 +21,7 @@ body {
     border: none;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    width: 300px;
+    width: 100px;
   }
   
   /* Hidden Birthday Message */
