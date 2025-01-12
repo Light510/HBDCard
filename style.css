@@ -11,6 +11,9 @@ body {
     margin: 0;
     padding: 0;
     background-color:rgb(151, 47, 111);
+    background: url(https://media.giphy.com/media/14u2ZI1XhkoZCU/giphy.gif?cid=ecf05e4777vter709gmg5vk24mpw2ywsm3s9r5bq9snlmx0k&ep=v1_gifs_related&rid=giphy.gif&ct=ghttps://giphy.com/gifs/animated-star-pWhWtKdqwOAco);
+    background-size: cover;
+    background-position: center;
     color: #333;
     display: flex;
     flex-direction: column;
@@ -32,7 +35,9 @@ body {
 .wrapper{
     position: relative;
     width: 300px;
-    background: seagreen;
+    background:transparent;
+    border: 3px solid rgba(199, 191, 191, 0.493);
+    backdrop-filter: blur(10px);
     color: #fff;
     padding: 30px 40px;
     border-radius: 20px;
