@@ -1,5 +1,5 @@
 // Array database nama
-const namaDatabase = ['atta', 'kudanil', 'monhet'];
+const namaDatabase = ['atta', 'citra', 'sandy', 'ayya', 'akbar'];
 // Variabel untuk menyimpan objek audio secara global
 let music;
 
