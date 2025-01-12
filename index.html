@@ -7,20 +7,41 @@
     <meta name="author" content="Initial T">
     <title>Hepi Besdey</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- SweetAlert2 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
+
 <body>
-    <div class="wrapper">
+    <!-- Halaman Login -->
+    <div id="loginPage" class="wrapper">
         <h1 class="sambutan">Hallo, Ketik namamu disini dong</h1>
         <h4 class="sambutan">Jangan Pake nama orang lain yaa</h4>
-        <div class="input-box"><input type="text" placeholder="Nama kamu" required></div>
-        <button type="submit" class="btn">Let's go!</button>
+        <div class="input-box">
+            <input type="text" id="nameInput" placeholder="Nama kamu" required>
+        </div>
+        <button type="submit" class="btn" id="submitBtn">Let's go!</button>
     </div>
+
+   <!-- Halaman Animasi -->
+<div id="animatedPage" class="animated-page" style="display:none;">
+    <div class="kata">
+        <h1 class="animated-text" id="welcomeMessage">Selamat ulang tahun <span class="animated-text" id="userName"></span>!</h1>
+        <h1 class="animated-text2" id="welcomeMessage">wish you all the best!</h1>
+        <h1 class="animated-text3" id="welcomeMessage">Thanks For Visit!</h1>
+        <button id="backBtn" class="btnBack">Kembali ke Login</button>
+        <button id="stopBtn" class="btn">Stop Lagu</button> <!-- Tombol Stop Lagu -->
+    </div>
+</div>
+
+
+
+    <!-- SweetAlert2 Modal -->
     <footer>
         <p>&copy; 2025 by Atta. All rights reserved.</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

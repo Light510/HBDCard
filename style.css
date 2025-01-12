@@ -60,6 +60,7 @@ body {
     outline:none;
     border-radius: 40px;
     padding: 20px 45px 20px 20px;
+    color: white;
     box-sizing: border-box;
 }
 .input-box input::placeholder{
@@ -78,6 +79,148 @@ body {
     font-size: 15px;
     font-family: "Pacifico",serif;
 }
+/* Existing CSS */
+
+.animated-page {
+    text-align: center;
+    display: flex;
+}
+.animated-page .kata{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.animated-text {
+    font-family: "Pacifico", serif;
+    opacity: 0;
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 5px;
+    animation: scaleIn 10s ease-out forwards, fadeIn 5s ease-out forwards;
+    animation-delay: 1s;
+}
+
+.animated-text2 {
+    font-family: "Pacifico", serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 5px;
+    visibility: visible; /* Menyembunyikan teks pada awalnya */
+    opacity: 0;         /* Membuat teks tidak terlihat pada awalnya */
+    animation: scaleIn 10s ease-out forwards, fadeIn 6s ease-out forwards;
+    animation-delay: 5s; /* Delay agar muncul setelah animasi pertama selesai */
+}
+
+.animated-text3 {
+    font-family: "Pacifico", serif;
+    font-size: 60px;
+    font-weight: bold;
+    opacity: 0;
+    color: white;
+    letter-spacing: 5px;
+    animation: scaleIn 10s ease-out forwards, fadeIn 7s ease-out forwards;
+    animation-delay: 11s;  /* Delay agar muncul setelah animasi kedua selesai */
+}
+
+@keyframes scaleIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    90% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.7;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;  /* Atur agar menghilang setelah animasi */
+    }
+}
+
+
+/* Tambahan untuk tombol Stop Lagu */
+#stopBtn {
+    width: 60%;
+    height: 35px;
+    margin-top: 1rem;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: "Pacifico", serif;
+    background-color: rgba(255, 0, 0, 0.486); /* Warna merah untuk tombol stop */
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+#stopBtn:hover {
+    background-color: darkred; /* Efek hover menjadi merah gelap */
+}
+
+
+/* Button Kembali */
+.btnBack {
+    width: 70%;
+    height: 35px;
+    margin-top: 1rem;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    border-radius: 30px;
+    font-size: 15px;
+    font-family: "Pacifico", serif;
+    background-color: #cabbbb57;
+    color: white;
+}
+
+.btnBack:hover {
+    background-color: #555;
+}
+
+/* SweetAlert custom styling */
+.swal2-popup {
+    background-color: #333 !important; /* Gelapkan latar belakang */
+    color: white !important; /* Ubah warna teks menjadi putih */
+    border-radius: 10px;
+}
+
+.swal2-title {
+    color: white !important; /* Ubah warna judul menjadi putih */
+}
+
+.swal2-content {
+    color: #ccc !important; /* Ubah warna konten menjadi lebih terang */
+}
+
+.swal2-confirm {
+    background-color: #444 !important; /* Warna tombol konfirmasi */
+    border: 1px solid #fff !important;
+    color: white !important;
+}
+
+.swal2-cancel {
+    background-color: #666 !important; /* Warna tombol batal */
+    border: 1px solid #fff !important;
+    color: white !important;
+}
+
 footer {
     background-color: #333;
     color: white;
